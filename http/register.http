@@ -1,0 +1,11 @@
+### User register
+POST http://localhost:8080/hibernate/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "test123456!",
+  "email": "john_lee@gmail.com",
+  "agree": true
+}
