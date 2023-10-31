@@ -40,6 +40,7 @@ public class FormController {
     registerVO.setUsername(registerRequest.getUsername());
     registerVO.setPassword(registerRequest.getPassword());
     registerVO.setEmail(registerRequest.getEmail());
+    registerVO.setAge(registerRequest.getAge());
     registerVO.setAgree(registerRequest.getAgree());
 
     logger.info("Register request body: {}", registerRequest);

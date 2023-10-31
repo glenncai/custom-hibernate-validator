@@ -2,6 +2,7 @@ package com.glenncai.hibernate.model.dto;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.glenncai.hibernate.validator.Age;
 import org.slf4j.Logger;
 
 import javax.validation.constraints.AssertTrue;
@@ -31,6 +32,9 @@ public class RegisterRequest {
   @Email(message = "Email is invalid")
   private String email;
 
+  @Age(lower = 16, upper = 65, message = "Age must between 16 and 65")
+  private Integer age;
+
   @NotNull(message = "Must agree the terms")
   @AssertTrue(message = "Must agree the terms")
   private Boolean agree;
@@ -41,6 +45,14 @@ public class RegisterRequest {
 
   public void setAgree(Boolean agree) {
     this.agree = agree;
+  }
+
+  public Integer getAge() {
+    return age;
+  }
+
+  public void setAge(Integer age) {
+    this.age = age;
   }
 
   public String getUsername() {

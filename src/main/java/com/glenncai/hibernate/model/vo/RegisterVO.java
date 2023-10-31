@@ -13,7 +13,17 @@ public class RegisterVO {
 
   private String email;
 
+  private Integer age;
+  
   private Boolean agree;
+
+  public Integer getAge() {
+    return age;
+  }
+
+  public void setAge(Integer age) {
+    this.age = age;
+  }
 
   public Boolean getAgree() {
     return agree;
