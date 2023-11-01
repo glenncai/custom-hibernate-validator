@@ -19,7 +19,7 @@ import javax.validation.Payload;
 @Constraint(validatedBy = AgeValidator.class)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Age {
-  String message() default "Age should between 18 and 60";
+  String message() default "{custom.invalidAge.message}";
 
   Class<?>[] groups() default {};
 

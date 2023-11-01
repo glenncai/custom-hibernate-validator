@@ -32,7 +32,7 @@ public class RegisterRequest {
   @Email(message = "Email is invalid")
   private String email;
 
-  @Age(lower = 16, upper = 65, message = "Age must between 16 and 65")
+  @Age(lower = 16, upper = 65)
   private Integer age;
 
   @NotNull(message = "Must agree the terms")

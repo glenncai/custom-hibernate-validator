@@ -7,6 +7,6 @@ Content-Type: application/json
   "username": "john",
   "password": "test123456!",
   "email": "john_lee@gmail.com",
-  "age": 28,
+  "age": 18,
   "agree": true
 }
